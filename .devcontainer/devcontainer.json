@@ -1,0 +1,12 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.231.6/containers/docker-existing-dockerfile
+{
+	"image": "devcontainer:v1.1",
+	"extensions": [
+		"ms-toolsai.jupyter",
+		"ms-python.python"
+	],
+	"mounts": [
+		"source=${localWorkspaceFolder}/mountfolder/,target=/home/jovyan/work,type=bind,consistency=cached"
+	]
+}
